@@ -1,14 +1,14 @@
 define(['text!Todo.view.html', 'text!Todo.edit.html'], function (viewHtml, editHtml) {
     
     function Todo(description) {
-        this.description = joga.string(description);
-        this.isEditing = joga.boolean(false);
-        this.deleted = joga.boolean(false);
+        this.description = joga.stringProperty(description);
+        this.isEditing = joga.booleanProperty(false);
+        this.deleted = joga.booleanProperty(false);
         
-        this.viewElement = joga.element(viewHtml);
-        this.editElement = joga.element(editHtml);
+        this.viewElement = joga.elementProperty(viewHtml);
+        this.editElement = joga.elementProperty(editHtml);
         
-        this.element = joga.computed(function() {
+        this.element = joga.computedProperty(function() {
             return this.isEditing() ? this.editElement() : this.viewElement();
         });
     }

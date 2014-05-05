@@ -1,8 +1,8 @@
-define(['text!TodoList.html', 'Todo'], function (html, Todo) {
+define(['text!TodoList.html', 'Todo', 'joga'], function (html, Todo, joga) {
 
     function TodoList() {
-        this.todos = joga.array([]);
-        this.element = joga.element(html);
+        this.todos = joga.arrayProperty([]);
+        this.element = joga.elementProperty(html);
     }
     
     TodoList.prototype.add = function (description) {

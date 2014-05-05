@@ -1,9 +1,9 @@
 define(['text!Controls.html'], function (html) {
     
     function Controls(options) {
-        this.todoList = joga.object(options.todoList);
-        this.description = joga.string("");
-        this.element = joga.element(html);
+        this.todoList = joga.objectProperty(options.todoList);
+        this.description = joga.stringProperty("");
+        this.element = joga.elementProperty(html);
     }
     
     Controls.prototype.addTodo = function () {
