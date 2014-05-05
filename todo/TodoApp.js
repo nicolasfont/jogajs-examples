@@ -1,4 +1,4 @@
-define(['text!TodoApp.html', 'Controls', 'TodoList', 'joga'], function (html, Controls, TodoList, joga) {
+define(['joga', 'text!TodoApp.html', 'Controls', 'TodoList'], function (joga, html, Controls, TodoList) {
     
     function TodoApp() {
         this.todoList = joga.objectProperty(new TodoList());

@@ -1,4 +1,4 @@
-define(['text!TodoList.html', 'Todo', 'joga'], function (html, Todo, joga) {
+define(['joga', 'text!TodoList.html', 'Todo'], function (joga, html, Todo) {
 
     function TodoList() {
         this.todos = joga.arrayProperty([]);

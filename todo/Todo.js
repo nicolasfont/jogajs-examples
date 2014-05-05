@@ -1,4 +1,4 @@
-define(['text!Todo.view.html', 'text!Todo.edit.html'], function (viewHtml, editHtml) {
+define(['joga', 'text!Todo.view.html', 'text!Todo.edit.html'], function (joga, viewHtml, editHtml) {
     
     function Todo(description) {
         this.description = joga.stringProperty(description);
