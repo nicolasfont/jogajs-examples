@@ -1,4 +1,4 @@
-define(['joga', 'text!Controls.html'], function (joga, html) {
+define(['text!Controls.html'], function (html) {
     
     function Controls(options) {
         this.todoList = joga.objectProperty(options.todoList);

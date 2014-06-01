@@ -5,6 +5,15 @@
         <title>humans</title>
     </head>
     <body>
-        <script data-main="main" src="require.js"></script>
+        <script src="bower_components/requirejs/require.js"></script>
+        <script>
+            requirejs.config({
+                paths: {
+                    joga: 'bower_components/joga/joga',
+                    text: 'bower_components/requirejs-text/text'
+                }
+            });
+            requirejs(['main']);
+        </script>
     </body>
 </html>

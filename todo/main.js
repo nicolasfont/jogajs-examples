@@ -1,4 +1,4 @@
-define(['TodoApp', 'joga'], function (TodoApp) {
+define(['TodoApp'], function (TodoApp) {
     
     var app = new TodoApp();
     
