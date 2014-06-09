@@ -1,3 +1,7 @@
 <div class="Human">
+    <select data-foreach="this.genders()" data-text="this" data-value="this" data-selected="this.gender()"></select>
     <span data-text="this.name()"></span> <span data-text="this.isHappy() ? ':)' : ':(' "></span>
+    <select data-foreach="[true, false]" data-text="this" data-value="this" data-selected="this.isHappy()"></select>
+    <select data-foreach="[true, false]" data-text="this" data-value="this" data-selected="this.isHappy()"></select>
+    <button data-onclick="this.die()">Die</button>
 </div>
