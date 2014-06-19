@@ -4,13 +4,17 @@ define(['joga', 'text!Human.html'], function (joga, html) {
         this.name = joga.stringProperty(name || "");
         this.isHappy = joga.booleanProperty(true);
         this.element = joga.elementProperty(html);
-        this.genders = joga.arrayProperty(['Male', 'Female', 'Other']);
-        this.gender = joga.stringProperty();
+        this.genders = Human.genders;
+        this.gender = joga.stringProperty(Human.genders()[0]);
     }
+
+    Human.genders = joga.arrayProperty(['Male', 'Female', 'Other']);
     
     Human.prototype.die = function () {
         this.element("<div>a dead human</div>");
     };
+
+    window.Human = Human;
 
     return Human;
 });
