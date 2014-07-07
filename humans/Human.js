@@ -7,6 +7,7 @@ define(['joga', 'text!Human.html'], function (joga, html) {
         this.genders = Human.genders;
         this.gender = joga.stringProperty(Human.genders()[0]);
         this.friends = joga.arrayProperty([]);
+        this.bestFriends = joga.arrayProperty([]);
     }
 
     Human.genders = joga.arrayProperty(['Male', 'Female', 'Other']);
