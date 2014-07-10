@@ -1,10 +1,9 @@
-define(['joga', 'text!Human.html'], function (joga, html) {
+define(['joga', 'text!Human.html', 'text!Human.dead.html'], function (joga, html, deadHtml) {
 
     function Human(name) {
         this.name = joga.stringProperty(name || "");
         this.isHappy = joga.booleanProperty(true);
         this.element = joga.elementProperty(html);
-        this.genders = Human.genders;
         this.gender = joga.stringProperty(Human.genders()[0]);
         this.friends = joga.arrayProperty([]);
         this.bestFriends = joga.arrayProperty([]);
@@ -13,7 +12,7 @@ define(['joga', 'text!Human.html'], function (joga, html) {
     Human.genders = joga.arrayProperty(['Male', 'Female', 'Other']);
     
     Human.prototype.die = function () {
-        this.element("<div>a dead human</div>");
+        this.element(deadHtml);
     };
     
     Human.prototype.toString = function () {
