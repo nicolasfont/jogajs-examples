@@ -1,0 +1,21 @@
+{
+  "name": "clock",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nicolasfont/jogajs-examples",
+  "authors": [
+    "Nicolas Font <nicolasfont@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "joga": "~0.1.0",
+    "requirejs-text": "~2.0.12",
+    "requirejs": "~2.1.13"
+  }
+}
