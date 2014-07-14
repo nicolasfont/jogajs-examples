@@ -18,6 +18,14 @@ define(['joga', 'text!Human.html', 'text!Human.dead.html'], function (joga, html
     Human.prototype.toString = function () {
         return "A human named " + this.name();
     };
+    
+    Human.prototype.toJson = function () {
+        return {
+            name: this.name(),
+            isHappy: this.isHappy(),
+            gender: this.gender()
+        };
+    };
 
     window.Human = Human;
 
