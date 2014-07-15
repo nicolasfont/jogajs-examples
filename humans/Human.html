@@ -12,6 +12,6 @@
 
     <button data-onclick="this.die()">Die</button>
     
-    Humans: <select data-foreach="app.humans()" data-text="this.name()" data-selected="this.friends()" multiple="true"></select>
+    Humans: <select data-foreach="app.humans()" data-text="this.name() + ' ' + (this.isHappy() ? ':)' : ':(')" data-selected="this.friends()" multiple="true"></select>
 
 </div>
