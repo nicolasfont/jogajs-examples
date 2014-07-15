@@ -15,6 +15,10 @@ define(['joga', 'text!Human.html', 'text!Human.dead.html'], function (joga, html
         this.element(deadHtml);
     };
     
+    Human.prototype.resucitate = function () {
+        this.element(html);
+    };
+    
     Human.prototype.toString = function () {
         return "A human named " + this.name();
     };
