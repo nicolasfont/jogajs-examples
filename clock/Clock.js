@@ -1,7 +1,7 @@
 define(['joga', 'text!Clock.html'], function (joga, html) {
     
     function Clock() {
-        this.time = joga.stringProperty();
+        this.time = joga.stringProperty(new Date().toString());
         this.interval = joga.objectProperty();
         this.element = joga.elementProperty(html);
         this.start();

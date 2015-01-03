@@ -1,0 +1,3 @@
+[submodule "jogajs"]
+	path = jogajs
+	url = https://github.com/nicolasfont/jogajs.git

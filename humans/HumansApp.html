@@ -1,5 +1,13 @@
 <div class="HumansApp">
     <h1>Humans</h1>
     <button data-onclick="this.addHuman()">Add</button>
+    
     <div data-foreach="this.humans()" data-do="this.element()"></div>
+    
+    <div data-children="this.humans()"/>
+    
+    <humans/>
+    
+    <div data-children="this.humans.map(function (human) {return human.element()})"></div>
+    
 </div>

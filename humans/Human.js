@@ -19,6 +19,10 @@ define(['joga', 'text!Human.html', 'text!Human.dead.html'], function (joga, html
         this.element(html);
     };
     
+    Human.prototype.face = function () {
+        return this.isHappy() ? ":)" : ":(";
+    };
+    
     Human.prototype.toString = function () {
         return "A human named " + this.name();
     };

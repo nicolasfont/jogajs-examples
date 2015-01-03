@@ -1,14 +1,18 @@
 <div class="Human">
     <select data-foreach="Human.genders()" data-text="this" data-selected="this.gender()"></select>
+    
+    <!-- <select data-options="Human.genders()" data-selected="this.gender()"></select> -->
+    
     <input type="text" data-value="this.name()"> <span data-text="this.isHappy() ? ':)' : ':(' "></span>
-
-    <select data-foreach="[true, false]" data-text="this" data-selected="this.isHappy()"></select>
-    <select data-foreach="[true, false]" data-text="this" data-selected="this.isHappy()"></select>
+    
+    <!-- <select data-options="[true, false]" data-selected="this.isHappy()"></select> -->
     
     :)<input type="radio" data-selectedValue="true" data-selected="this.isHappy()"/>
     :(<input type="radio" data-selectedValue="false" data-selected="this.isHappy()"/>
     
     Friends: <select data-foreach="this.friends()" data-text="this.name()" data-selected="this.bestFriends()" multiple="true"></select>
+    
+    <!-- Friends: <select data-options="this.friends()" data-text="this.name()" data-selected="this.bestFriends()" multiple="true"></select> -->
 
     <button data-onclick="this.die()">Die</button>
     
